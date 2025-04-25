@@ -76,10 +76,7 @@ async function loginUser(req, res, next) {
       message: "Logged in successfully",
       email: user.email,
       userid: user.id,
-<<<<<<< HEAD
       profilePicture: user.profilePicture,
-=======
->>>>>>> 9639cbf (Add Backend Code)
       isAdmin: user.isAdmin,
       accessToken, // Send access token
       auth: true,
