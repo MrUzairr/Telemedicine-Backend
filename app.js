@@ -2,24 +2,31 @@ require('dotenv').config();
 const express = require("express");
 const path = require('path');
 const database = require("./database/mongodb");
+<<<<<<< HEAD
 // const postgresdb = require("./database/postgres");
 // const sequelize = require("./config/sequelize");
 
+=======
+>>>>>>> 9639cbf (Add Backend Code)
 const cors = require('cors');
 const bodyParser = require("body-parser");
 const usersRoute = require("./routes/userRoutes");
 const templateRoute = require('./routes/templateRoutes')
 const doctorRoute = require('./routes/doctorRoutes')
 const authRoute = require('./routes/authRoutes')
+<<<<<<< HEAD
 const asanaRoute = require('./routes/asanaRoutes')
 const notificationRoutes = require("./routes/notificationRoute");
 const patientRoutes = require("./routes/patientRoute");
 // const asanaRoutes = require('./routes/asanaRoute/asanaRoutes')
 const asanaRoutes1 = require('./routes/asanaRoute/asanaRoutes1')
+=======
+>>>>>>> 9639cbf (Add Backend Code)
 const errorHandler = require('./middleware/errorHandler')
 var createError = require('http-errors');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+<<<<<<< HEAD
 
 const { spawn } = require("child_process");
 
@@ -37,10 +44,15 @@ const flaskProcess = spawn("python", ["E:/7th Semester/FYP/Development/Disease P
     cwd: "E:/7th Semester/FYP/Development/Disease Prediction" // Ensure correct working directory
 });
  // Adjust path if needed
+=======
+const PORT = process.env.PORT
+
+>>>>>>> 9639cbf (Add Backend Code)
 // const productsRoute = require("../NodeApis/Route/productRoute");
 // const ordersRoute = require("../NodeApis/Route/orderRoute");
 // const axios = require('axios');
 
+<<<<<<< HEAD
 flaskProcess.stdout.on("data", (data) => {
   console.log(`Flask: ${data}`);
 });
@@ -61,6 +73,9 @@ app.post("/flask-api", async (req, res) => {
   }
 });
 
+=======
+const app = express();
+>>>>>>> 9639cbf (Add Backend Code)
 
 app.use(bodyParser.json());
 
@@ -82,10 +97,13 @@ app.use("/images", express.static(path.join(__dirname, "public", "images")));
 // app.use("/api/auth", authRoute);
 app.use("/api", usersRoute);
 app.use("/doc", doctorRoute);
+<<<<<<< HEAD
 // app.use("/asana", asanaRoute);
 app.use("/tasks", asanaRoutes1);
 app.use("/twilio", notificationRoutes);
 app.use("/patient-symptoms", patientRoutes);
+=======
+>>>>>>> 9639cbf (Add Backend Code)
 // app.get("/doc/getalldoctors", (req, res) => {
 //   // Example response
 //   res.json({

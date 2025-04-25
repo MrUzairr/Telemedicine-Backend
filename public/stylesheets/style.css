@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 * {
 	margin: 0;
@@ -141,3 +142,13 @@ ul li {
 	cursor: pointer;
 	text-transform: uppercase;
 }
+=======
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+>>>>>>> 9639cbf (Add Backend Code)
