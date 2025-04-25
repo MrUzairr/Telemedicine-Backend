@@ -3,7 +3,7 @@ const express = require("express");
 const path = require('path');
 const database = require("./database/mongodb");
 // const postgresdb = require("./database/postgres");
-// const sequelize = require("./config/sequelize");
+
 
 const cors = require('cors');
 const bodyParser = require("body-parser");
